@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+    <!-- include jquery else will not work -->
+    
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+    <style>
+      #home {
+        background: url("../images/flowers_back.jpg") no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+        /* border: 2px solid red; */
+        border-radius: 2em;
+        align-items: center;
+        justify-content: center;
+        /* opacity: 0.8; */
+      }
+
+      #about img {
+        float: right;
+        width: 30%;
+        height: 20vh;
+        margin-right: 34px;
+      }
+
+      #hometexts {
+        /* background-color: rgb(234, 234, 234); */
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        word-spacing: 10px;
+        letter-spacing: 2px;
+        margin: 3px;
+        padding: 3px;
+
+      }
+
+      #hometoptext {
+        margin: 9px;
+        padding: 3px;
+      }
+
+      body {
+        background-color: aliceblue;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      #contact{
+      background-color:bisque;
+      border-radius: 10px;
+      margin: 8px;
+      }
+      .imgin{
+        border: 0px outset;
+        border-radius: 10px;
+        box-shadow: 10px 10px 45px 2px;
+      }
+      .casousel-inner >.item >img{
+        width: 80%;
+        margin: auto;
+      }
+      .cntr{
+        align-items: center;
+        background: url('../images/flowers-a.jpg') center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+	border-radius:30px;
+      }
+      #contact{
+        align-items: center;
+        width: 50%;
+      }
+      #upperLayerContact{
+        /* margin-left: ; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: azure;
+        
+      }
+      #footer{
+        /* background-color: black; */
+        height: 30px;
+        /* background-color: beige; */
+      }
+      #upsome{
+        margin: 19px;
+        padding: 4px;
+      }
+    </style>
+    <title>MyFlowersBucket.com</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-primary navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- for responsiveness collapsible navbar -->
+        <!-- Header of navbar -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">MyFlowersBucket.com</a>
+      </div>
+
+      <!-- header end -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#home" type="button" class="btn ">Home</a>
+          </li>
+          <li>
+            <a href="#about" type="button" class="btn">About</a>
+          </li>
+          <li>
+            <a href="#services" type="button" class="btn">Services</a>
+          </li>
+          <li>
+            <a href="#contact" type="button" class="btn ">Contact</a>
+          </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- dropdown menu -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle btn btn-primary btn-lg" data-toggle="dropdown">Menu
+              <span class="caret">
+
+              </span></a>
+            <ul class="dropdown-menu">
+              <br>
+              <li><a href="#" class="btn btn-primary btn-sm">Login</a></li>
+              <br>
+              <li><a href="#" class="btn btn-primary btn-sm">Sign up</a></li><br>
+            </ul>
+          </li>
+          <!-- end of drop down menu -->
+        </ul>
+        <!-- end of navbar links -->
+      </div>
+      <!-- end of navbar collapse  -->
+    </div>
+    <!-- end of container fluid -->
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- starting the body section -->
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <!-- <h3><span class="label label-info">Home Section</span></h3> -->
+    <!-- body section of the webpage -->
+    <div id="home">
+      <!-- <img src="../images/pexels-camila-benítez-10970424.jpg" alt="#" > -->
+      <h4 id="hometoptext">
+        <p><strong>About Flowers</strong> </p>
+      </h4>
+      <div id="hometexts">
+        <h5>
+          Did you know there are over 400,000 plant species across the world? In other words, that s more than the
+          number of bird, butterfly and bee species, combined! While many flowers grow naturally in forests, grasslands,
+          deserts and tundras, growing your own garden or picking up some unique flowers is a great way to create your
+          own oasis.
+
+          How do you pick the right type of flowers for your needs? With literally hundreds of thousands to choose from,
+          it can be overwhelming! That s why we ve compiled our handy guide below of 151 Most Common Flower Types in the
+          U.S. Wondering how much sun or soil your flower will need? Where it grows best? How to make a fabulous flower
+          bouquet for your indoor table? Scroll through our alphabetical list of flower names and gardening information
+          to find your perfect bloom!
+        </h5>
+
+        <p>
+          A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants
+          (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction,
+          usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion
+          of sperm and eggs from different individuals in a population) resulting from cross-pollination or allow
+          selfing (fusion of sperm and egg from the same flower) when self-pollination occurs.
+
+          The two types of pollination are: self-pollination and cross-pollination. Self-pollination happens when the
+          pollen from the anther is deposited on the stigma of the same flower, or another flower on the same plant.
+          Cross-pollination is the transfer of pollen from the anther of one flower to the stigma of another flower on a
+          different individual of the same species. Self-pollination happens in flowers where the stamen and carpel
+          mature at the same time, and are positioned so that the pollen can land on the flower's stigma. This
+          pollination does not require an investment from the plant to provide nectar and pollen as food for
+          pollinators.[1]
+
+          Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the
+          site where gametophytes develop. Many flowers have evolved to be attractive to animals, so as to cause them to
+          be vectors for the transfer of pollen. After fertilization, the ovary of the flower develops into fruit
+          containing seeds.
+
+          In addition to facilitating the reproduction of flowering plants, flowers have long been admired and used by
+          humans to bring beauty to the environment, and also as objects of romance, ritual, esotericism, witchcraft,
+          religion, medicine, and as a source of food.
+        <div class="badge"> Text taken from wiki</div>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  <br>
+  <!-- about secttion -->
+  <div class="container">
+    <!-- <h3><span class="label label-warning">About Section</span></h3> -->
+    <div id="about">
+      <div class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><button type="button" class="btn btn-info" data-target="#ex1"
+              data-toggle="collapse">Rose flower</button></div>
+          <div class="panel-body collapse" id="ex1">A rose is a woody perennial flowering plant of the genus Rosa, in the family
+            Rosaceae, or the flower it bears. There are over three hundred species and tens of thousands of
+            cultivars.[citation needed] They form a group of plants that can be erect shrubs, climbing, or trailing,<img data-toggle="modal" data-target="#modal" src="../images/rose.jpg" class="imgin" alt="">
+            with stems that are often armed with sharp prickles.[citation needed] Their flowers vary in size and shape
+            and are usually large and showy, in colours ranging from white through yellows and reds. Most species are
+            native to Asia, with smaller numbers native to Europe,
+            North America, and northwestern Africa.[citation needed] Species, cultivars and hybrids are all widely grown
+            for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose
+            plants range in size from compact, miniature roses, to climbers that can reach seven meters in
+            height.[citation needed] Different species hybridize easily, and this has been used in the development of
+            the wide range of garden roses.
+          </div>
+        </div>
+      </div>
+      <div class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <button type="button" class="btn btn-info" data-target="#ex2" data-toggle="collapse">Jasmine flower</button>
+          </div>
+          <div class="panel-body collapse" id="ex2">Jasmine (taxonomic name: Jasminum; /jæsminəm/, YASS-min-əm[5]) is a genus of
+            shrubs and vines in the olive family (Oleaceae). It contains around 200 species native to tropical and warm
+            temperate regions of Eurasia, Africa, and Oceania. Jasmines are widely cultivated for the characteristic
+            fragrance of their flowers. A number of unrelated plants contain the word "jasmine" in their common names
+            (see Other plants called "jasmine").
+
+            Jasmine can be either deciduous (leaves falling in autumn) or evergreen (green all year round), and can be
+            erect, spreading, or climbing shrubs and vines. Their leaves are borne in opposing or alternating
+            arrangement and can be of simple, trifoliate,
+              <img data-toggle="modal" data-target="#modal1" src="../images/jasmine.jpg" alt="#" class="imgin">
+            or pinnate formation. The flowers are typically around 2.5 cm (0.98 in) in diameter. They are white or
+            yellow, although in rare instances they can be slightly reddish. The flowers are borne in cymose clusters
+            with a minimum of three flowers, though they can also be solitary on the ends of branchlets. Each flower has
+            about four to nine petals, two locules, and one to four ovules. They have two stamens with very short
+            filaments. The bracts are linear or ovate. The calyx is bell-shaped. They are usually very fragrant. The
+            fruits of jasmines are berries that turn black when ripe. The basic chromosome number of the genus is 13,
+            and most species are diploid (2n=26). However, natural polyploidy exists, particularly in Jasminum sambac
+            (triploid 3n=39), Jasminum flexile (tetraploid 4n=52), Jasminum mesnyi (triploid 3n=39), and Jasminum
+            angustifolium (tetraploid 4n=52).[6]
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services section -->
+  
+  <div class="container" id="services">
+    
+    <!-- here we create a carousel -->
+    <!-- for our services provided by us  -->
+    <br><br>
+    <!-- creating services section -->
+      <!-- <h3><span class="label label-warning">
+        Services section
+      </span></h3> -->
+    <div class="carousel slide" id="carousel" data-ride="carousel">
+
+      <!-- carousel indicators -->
+        
+      <ol class="carousel-indicators">
+        <li data-target="#carousel"  class="active" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+      </ol>
+      <!-- wrapper for slider -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item ">
+          <img  class="reduce" src="../images/titlies/titli-a.jpg" alt="#" width="100%" >
+          <div class="carousel-caption">
+            <h1>We Have</h1>
+            <h4><span class="label label-warning label-lg">Roses </span>
+            <span class="label label-warning label-lg">Sunflower </span>
+            <span class="label label-warning label-warning">Blue Roses </span>
+            <span class="label label-warning label-warning">Black Dhalia </span>
+            <span class="label label-warning label-warning">Green Flowers</span>
+          </h4>
+            
+          </div>
+        </div>
+ 
+        <div class="item ">
+          <img 
+          class="reduce" src="../images/titlies/titli-b.jpg" alt="#">
+          <div class="carousel-caption">
+            <h1>Garden Flowers</h1>
+            <p>We Provide You the Flowers which are fersh. Flowers That are taken from gardens </p>
+
+          </div>
+        </div>
+        <div class="item ">
+          <img  class="reduce" src="../images/titlies/titli-c.jpg" alt="#">
+          <div class="carousel-caption">
+            <h1> Cheap rates</h1>
+            <p>cheap and better quality flowers here </p>
+
+          </div>
+        </div>
+        <div class="item active ">
+          <img class="reduce" src="../images/titlies/titli-d.jpg" alt="#">
+          <div class="carousel-caption">
+            <h1>Fast Delivery</h1>
+            <p>when you order your flowers will be arrived in two hours</p>
+
+          </div>
+        </div>
+        <div class="item ">
+          <img  class="reduce" src="../images/titlies/titli-e.jpg" alt="#">
+          <div class="carousel-caption">
+            <h1>Get Now @244 Per Packet</h1>
+            <p>
+              <a href="#contactLogin" type="button" class="btn btn-primary btn-block">Order Now</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <a href="#carousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#carousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- contact section -->
+    <div id="upperLayerContact">
+    <div class="container" id="contact">
+      <!-- <h3><span class="label label-warning">Contact Section</span></h3> -->
+      <form action="send.php" method="post">
+      <div class="form-group form-warning">
+        <label for="name">Full Name 
+        </label>
+          <input type="text" class="form-control " id="name" placeholder="Enter Your Full Name">
+      </div>
+      <div class="form-group has-warning has-feedback">
+        <label for="email">Email:
+        </label>
+          <input type="email" class="form-control" id="email" placeholder="Enter Email"> 
+      </div>
+      <div class="form-group" align="center" width="50%">
+        <label for="msg">
+          <h4> Type Your Message Here</h4>
+          
+          <textarea name="msg" id="msg"  rows="4"  placeholder="Write Your Message Here"></textarea>
+        </label>
+      </div>
+
+      <div class="form-group " align="center" >
+        <button type="submit" class="btn btn-primary ">Submit </button>
+      </div>
+    </form>  <!-- Form End-->
+    </div> <!-- Container end -->
+  </div>
+  <!-- footer section -->
+  <div class="container-fluid bg-info">
+    <div id="footer">
+      <h4 align="center">&copy; <span id="upsome" class="label label-warning"><a href="#" data-toggle="popover" title="Faisal Ahmad Bhat" data-content="Faisal Ahmad Bhat">Fabc</a></span>
+      @MyFlowerBucket.com <p class="badge">2022</p></h4>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $("data-toggle='popover'").popover();
+    });
+  </script>
+    <!-- modals for Rose and Jasmine section  -->
+  <!-- modals 1 for rose -->
+  <div class="modal fade in" id="modal">
+    <div class="modal-dialog bg-primary cntr">
+      <div class="model-content ">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">More About Roses</h4>
+
+        </div>
+        <div class="modal-body">
+          <h5>
+            Different species, cultivars and hybrids of the rose flower are widely grown for their beauty and fragrance.
+            Rose plants can range from small, miniature roses to climbers that can reach seven metres in height.
+            Rose flowers can be either low-maintenance or high-maintenance. Old garden roses and shrub roses required
+            little to no care to sustain while hybrid tea and polyantha or modern roses are considered high-maintenance
+            species.
+            Rose flowers are sometimes used as food, and very commonly used as flavouring or scents.
+            Roses are the epitome of beauty, because of their dazzling colour combination, sweet scent, delicate and
+            fragile petals.
+            In western culture, the red rose’s significance dates back to Greek mythology, and the belief that the
+            Goddess of love created roses.
+            Rose flowers are most commonly associated with love and romance, and sometimes secrecy or confidentiality.
+            Floribunda roses are among the longest blooming roses because they can bloom continuously from early spring
+            to late fall, depending on the cultivars.
+            Pink roses symbolise gratitude, grace and joy. They also suggest gentleness compared to a typical bright red
+            rose.
+            Blue roses are not natural but can be obtained through dyeing.
+          </h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal 2 for jasmine -->
+  <div class="modal fade in" id="modal1">
+    <div class="modal-dialog bg-primary cntr">
+      <div class="model-content ">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">More About Jasmine</h4>
+
+        </div>
+        <div class="modal-body">
+          <h5>
+            Genus
+            Jasminum
+            Unlike most genera in the Oleceae family, which have four corolla lobe petals, Jasmines often have five or
+            six lobes. asmines are often strong and sweet scented. Jasmines are widely cultivated for their shining
+            leaves and beautiful clusters of fragrant flowers.
+
+            Flowering in Jasmines takes place in summer or spring which is usally six months after planting. The Jasmine
+            flower releases its fragrance at night after the sun has set and especially when the moon is waxing towards
+            fullness. Jasmine flower buds are more fragrant than the flowers.
+
+            There exists a true Jasmine and a false Jasmine, and the two are commonly mistaken for each other because of
+            the fragrance the plants release. The true Jasmine belongs to the family Oleaceae and is primarily a bushy
+            shrub or a climbing vine and is non-poisonous.
+
+            True Jasmines have oval, shiny leaves and tubular, waxy-white flowers. The false Jasmine on the other hand
+            is in a completely different genus, Gelsemium, and family, Loganiaceae, which is considered too poisonous
+            for human consumption.
+          </h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <br><br> -->
+</body>
+
+</html>
